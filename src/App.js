@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import classNames from 'classnames/bind';
-import styles from './App.scss';
-
-const cx = classNames.bind(styles);
+import Button from './components/Button';
+import StyledButton from './components/StyeldButton';
 
 class App extends Component {
   render() {
     const isBlue = true;
     return (
-      <div className={cx('box', { blue: isBlue })}>
-        <div className={cx('box-inside')} />
+      <div>
+        <StyledButton big>Button</StyledButton>
+        <Button>Button</Button>
       </div>
     );
   }
